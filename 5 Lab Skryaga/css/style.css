@@ -1,0 +1,384 @@
+*  {    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.container {
+    font-family: "Open Sans";
+    max-width: 950px;
+}
+.header {
+    height: 90px;
+    background-color: #5b6169;
+}
+.slider {
+    height: 470px;
+    background-image: url("../img/slider_bg.png");
+    position: relative;
+}
+.services {
+    height: 490px;
+    background-color: #fff;
+}
+.about {
+    height: 615px;
+    background-color: #d1d1d1;
+}
+.footer {
+    height: 95px;
+    background-color: #fff;
+}
+
+.header-text {
+    padding-left: 0;
+    float: left;
+    font-family: Myriad Pro;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.header-test, .header-template {
+    background: linear-gradient(to bottom, #fff, #9d9d9e); /* Градиент для текста */
+    -webkit-background-clip: text; /* Обрезаем фон по тексту */
+    -webkit-text-fill-color: transparent; /* Прозрачный текст */
+}
+
+.header-test {
+    font-size: 24px;
+    margin-bottom: -5px;
+}
+
+.header-template {
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+.services-block {
+    text-align: center;
+}
+
+.slider-block {
+    overflow: hidden;
+    position: relative;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 16px;
+    right: 0px;
+    display: flex;
+}
+
+.bar {
+    height: 13px;
+    width: 13px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: #3674ba;
+    opacity: .5;
+    transition: all .4s ease;
+}
+
+.bar:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+input[name=r] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 300%;
+    height: 470px;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    width: 33.33%;
+    background-repeat: no-repeat;
+    transition: all .6s ease;
+    position: relative;
+}
+
+.slide-img{
+    position: absolute;
+    top: 30px;
+    left: -110px;
+    width: 650px;
+    height: 650px;
+}
+
+#r1:checked ~ .slide-1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .slide-1 {
+    margin-left: -33.33%;
+}
+
+#r3:checked ~ .slide-1 {
+    margin-left: -66.66%;
+}
+
+.slide-header {
+    margin-top: 150px;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 0px 0px 3px rgb(128, 128, 128);
+}
+
+.slide-description {
+    margin-top: -15px;
+    margin-bottom: 30px;
+    color: #335565;
+    font-weight: 450;
+}
+
+.slide-button  {
+    width: 170px;
+    height: 40px;
+    opacity: .5;
+    background-color: #3674ba;
+    color: #fff;
+}
+
+.slide-button:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.pretty-header {
+    text-transform: uppercase;
+    font-size: 44px;
+    line-height: 44px;
+    margin: 20px 0px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 300;
+    margin-bottom: 60px;
+  }
+
+.services-header, .about-header{
+    text-align: center;
+    margin-top: 60px;
+    color: #5b6169;
+}
+
+.services-header:before, .about-header:before {
+    content: "";
+    border-bottom: 1px solid #000;
+    width: 250px;
+    height: 0.5em;
+    position: absolute;
+    top: 0px;
+    margin-left: -260px;
+}
+
+.services-header:after, .about-header:after{
+    content: "";
+    border-bottom: 1px solid #000;
+    width: 250px;
+    height: 0.5em;
+    position: absolute;
+    top: 0px;
+    margin-left: 10px;
+}
+
+.services-block {
+    max-width: 260px;
+}
+
+.services-heading {
+    color: #3674ba;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.services-description {
+    text-align: center;
+    font-size: 14px;
+    color: #4e4e4e;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: "Arial";
+}
+
+.service-button {
+    width: 130px;
+    height: 30px;
+    background-color: #3674ba;
+    color: #fff;
+    font-size: 14px;
+}
+
+.Bar-Head {
+    color: #7c7c7c;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: -12px;
+}
+
+.Bar-Description {
+    color: #4e4e4e;
+    font-size: 14px;
+    font-weight: 540;
+    text-align: justify;
+    font-family: "Arial";
+}
+
+.SkillBar {
+    height: 30px;
+    position: relative;
+    background: #828181;
+    margin: 10px auto;
+}
+.Skill-Area {
+    z-index: 1;
+    float: left;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.skill-box {
+    text-transform: uppercase;
+}
+
+.Skills-Head {
+    color: #3674ba;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+
+.Skill-HTML, .Skill-CSS, .Skill-Photoshop, .Skill-Design {
+    background-color: #3674ba;
+    position: absolute;
+    height: 30px;
+}
+
+.Skill-HTML {
+    animation: Animate-HTML 5s;
+    width: 91%;
+}
+
+.Skill-CSS {
+    animation: Animate-CSS 5s;
+    width: 96%;
+}
+
+.Skill-Photoshop {
+    animation: Animate-PHOTOSHOP 5s;
+    width: 83%;
+}
+
+.Skill-Design {
+    animation: Animate-DESIGN 5s;
+    width: 80%;
+}
+
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 91%}
+}
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 96%}
+}@keyframes Animate-PHOTOSHOP {
+    from {
+    width: 10px;
+}
+to {
+    width: 83%}
+}@keyframes Animate-DESIGN {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}
+
+.form {
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    position: relative;
+}
+
+.mark {
+    position: absolute;
+    top: 70px;
+    left: 197px;
+    background: none ! important
+}
+
+.input-field {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #f1f1f1;
+    border: none;
+    height: 30px;
+    padding-left: 10px;
+    outline:none;
+    color: #585858;
+    font-weight: 500;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #7b7b7b;
+    text-transform: uppercase;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.input-message {
+    height: 106px;
+    padding-top: 5px;
+    resize: none;
+}
+
+.form-button {
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    background-color: #3674ba;
+    color: #fff;
+    font-size: 14px;
+    right: 0;
+    bottom: 5px;
+}
+
+.footer-text {
+    color: #6f6f6f;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-weight: 500;
+}
